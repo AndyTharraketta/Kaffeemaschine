@@ -30,21 +30,30 @@ namespace Kaffeemaschine
             //Aufgabe 4c: Verlagern Sie alle bisherigen Methodenaufrufe aus der Programm.cs in die Methode aus 4b.
             //Diese Methode soll es dann ermöglichen nach Nutzereingabe entweder einen Kaffe zu bekommen oder eine der Auffüllmethoden auszuführen.
 
-            // 250ml Wasser - 10g Bohnen -> pro Kaffee Tasse
+            // Selbstversuch
+            // 250ml Wasser - 15g Bohnen -> pro Kaffee Tasse
+            //Console.ForegroundColor = ConsoleColor.Yellow;
+
+            //Kaffeemaschine coffeeMaker1 = new Kaffeemaschine(800,200);
+            //Kaffeemaschine coffeeMaker2 = new Kaffeemaschine(600,300);
+
+            //Console.WriteLine($"Status Maschine 1:\t{coffeeMaker1.Wasserstand}ml Wasser\n\t\t\t{coffeeMaker1.Bohnenmenge}g Bohnen");    // Ausgabe Füllmenge
+            //Console.WriteLine();        // Leerzeile
+            //Console.WriteLine($"Status Maschine 2:\t{coffeeMaker2.Wasserstand}ml Wasser\n\t\t\t{coffeeMaker2.Bohnenmenge}g Bohnen");    // Ausgabe Füllmenge
+            //Console.WriteLine();        // Leerzeile
+
+            //coffeeMaker1.Makecoffee(250,15);        // Werte für 1x Kaffee
+
+            //Console.WriteLine();        // Leerzeile
+            //Console.WriteLine("\t\t\tEine Tasse Kaffee wurde zubereitet.");
+
+            //Console.ForegroundColor = ConsoleColor.White;
+
+            // Korrektur
             Console.ForegroundColor = ConsoleColor.Yellow;
+            Kaffeemaschine maschine1 = new Kaffeemaschine(90,50);
 
-            Kaffeemaschine coffeeMaker1 = new Kaffeemaschine(800,200);
-            Kaffeemaschine coffeeMaker2 = new Kaffeemaschine(600,300);
-
-            Console.WriteLine($"Status Maschine 1:\t{coffeeMaker1.Wasserstand}ml Wasser\n\t\t\t{coffeeMaker1.Bohnenmenge}g Bohnen");    // Ausgabe Füllmenge
-            Console.WriteLine();
-            Console.WriteLine($"Status Maschine 2:\t{coffeeMaker1.Wasserstand}ml Wasser\n\t\t\t{coffeeMaker1.Bohnenmenge}g Bohnen");    // Ausgabe Füllmenge
-            Console.WriteLine();
-
-            coffeeMaker1.Makecoffee(250,10);        // Werte für 1x Kaffee
-
-            Console.WriteLine();
-            Console.WriteLine("\t\t\tEine Tasse Kaffee wurde zubereitet.");
+            maschine1.KaffeeMenu();
 
 
 
