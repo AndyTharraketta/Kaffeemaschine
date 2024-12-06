@@ -36,11 +36,15 @@ namespace Kaffeemaschine
             Kaffeemaschine coffeeMaker1 = new Kaffeemaschine(800,200);
             Kaffeemaschine coffeeMaker2 = new Kaffeemaschine(600,300);
 
-            Console.WriteLine($"Füllmenge:\t{coffeeMaker1.Wasserstand}ml Wasser\n\t\t{coffeeMaker1.Bohnenmenge}g Bohnen");    // Ausgabe Füllmenge
+            Console.WriteLine($"Status Maschine 1:\t{coffeeMaker1.Wasserstand}ml Wasser\n\t\t\t{coffeeMaker1.Bohnenmenge}g Bohnen");    // Ausgabe Füllmenge
             Console.WriteLine();
+            Console.WriteLine($"Status Maschine 2:\t{coffeeMaker1.Wasserstand}ml Wasser\n\t\t\t{coffeeMaker1.Bohnenmenge}g Bohnen");    // Ausgabe Füllmenge
+            Console.WriteLine();
+
             coffeeMaker1.Makecoffee(250,10);        // Werte für 1x Kaffee
 
-            
+            Console.WriteLine();
+            Console.WriteLine("\t\t\tEine Tasse Kaffee wurde zubereitet.");
 
 
 

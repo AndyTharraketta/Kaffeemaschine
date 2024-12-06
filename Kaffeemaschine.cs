@@ -38,8 +38,12 @@ namespace Kaffeemaschine
 
         public void Makecoffee(int wasser, int bohnen)
         {
-            Console.WriteLine($"1x Kaffee:\t{wasser} ml Wasser\n\t\t{bohnen} g Bohnen");        // Ausgabe für 1x Kaffee
+            Console.WriteLine($"\t1x Kaffee:\t{wasser} ml Wasser\n\t\t\t{bohnen} g Bohnen");        // Ausgabe für 1x Kaffee
         }
+
+
+        
+
 
 
 
