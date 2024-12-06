@@ -1,4 +1,6 @@
-﻿namespace Kaffeemaschine
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Kaffeemaschine
 {
     internal class Program
     {
@@ -28,17 +30,23 @@
             //Aufgabe 4c: Verlagern Sie alle bisherigen Methodenaufrufe aus der Programm.cs in die Methode aus 4b.
             //Diese Methode soll es dann ermöglichen nach Nutzereingabe entweder einen Kaffe zu bekommen oder eine der Auffüllmethoden auszuführen.
 
-            // 200ml Wasser - 20g Bohnen -> pro Kaffee Tasse
+            // 250ml Wasser - 10g Bohnen -> pro Kaffee Tasse
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
             Kaffeemaschine coffeeMaker1 = new Kaffeemaschine(800,200);
-            Kaffeemaschine coffeeMaker2 = new Kaffeemaschine();
+            Kaffeemaschine coffeeMaker2 = new Kaffeemaschine(600,300);
 
-            Console.WriteLine($"Test: {coffeeMaker1.Wasserstand} und {coffeeMaker1.Bohnenmenge}");
+            Console.WriteLine($"Füllmenge:\t{coffeeMaker1.Wasserstand}ml Wasser\n\t\t{coffeeMaker1.Bohnenmenge}g Bohnen");    // Ausgabe Füllmenge
+            Console.WriteLine();
+            coffeeMaker1.Makecoffee(250,10);        // Werte für 1x Kaffee
+
+            
 
 
 
 
 
-
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

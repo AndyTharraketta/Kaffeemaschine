@@ -24,10 +24,7 @@ namespace Kaffeemaschine
             this.bohnenmenge = bohnenmenge;
         }
 
-        public Kaffeemaschine()
-        {
-        }
-
+       
         public int WasserstandAuffuellen()
         {
             return maxWasserstand - wasserstand;
@@ -39,6 +36,10 @@ namespace Kaffeemaschine
         }
 
 
+        public void Makecoffee(int wasser, int bohnen)
+        {
+            Console.WriteLine($"1x Kaffee:\t{wasser} ml Wasser\n\t\t{bohnen} g Bohnen");        // Ausgabe für 1x Kaffee
+        }
 
 
 
